@@ -1,8 +1,8 @@
 package com.tenniscourts.guests;
 
+
 import com.tenniscourts.config.persistence.BaseEntity;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,15 +18,13 @@ import javax.validation.constraints.NotNull;
 @Table
 @Getter
 @Setter
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString
 public class Guest extends BaseEntity<Long> {
 
-  @Column
-  @NotNull
-  private String name;
-
+    @Column
+    @NotNull
+    private String name;
 }
